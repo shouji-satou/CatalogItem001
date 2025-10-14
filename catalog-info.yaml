@@ -1,0 +1,13 @@
+# catalog-info.yaml
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sample-service
+  description: A simple demo service
+  tags:
+    - demo
+    - sample
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-a
