@@ -3,9 +3,11 @@ kind: Component
 metadata:
   name: newtonsoft-json
   description: "Popular high-performance JSON framework for .NET"
-  owner: user:default/user
+  labels:
+    app: example
 spec:
   type: library
+  owner: user:default/user
   lifecycle: stable
   system: example-system
   providesApis:
