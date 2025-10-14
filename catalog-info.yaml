@@ -12,7 +12,6 @@ spec:
   type: openapi
   lifecycle: experimental
   owner: user:default/user
-  lifecycle: production
   definition:
     $text: |
       openapi: 3.0.0
