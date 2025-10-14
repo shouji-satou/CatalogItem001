@@ -3,15 +3,11 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: sample-api
-  title: サンプルAPI
-  description: デモンストレーション用のAPIです（実際には存在しません）
-  tags:
-    - rest
-    - test
+  description: Simple sample API
 spec:
   type: openapi
   lifecycle: experimental
-  owner: user:default/user
+  owner: team-a
   definition:
     $text: |
       openapi: 3.0.0
@@ -21,7 +17,15 @@ spec:
       paths:
         /hello:
           get:
-            summary: Hello World
+            summary: Returns a greeting message
             responses:
               '200':
-                description: OK
+                description: successful response
+                content:
+                  application/json:
+                    schema:
+                      type: object
+                      properties:
+                        message:
+                          type: string
+                          example: "Hello, world!"
