@@ -1,31 +1,22 @@
-# catalog-info.yaml
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: sample-api
-  description: デモンストレーション用のAPIです
+  description: Minimal API test
 spec:
   type: openapi
   lifecycle: experimental
-  owner: user:default/user
+  owner: guests
   definition:
     $text: |
       openapi: 3.0.0
       info:
-        title: Sample API
+        title: Hello API
         version: 1.0.0
       paths:
         /hello:
           get:
-            summary: Returns a greeting message
+            summary: Greet
             responses:
               '200':
-                description: successful response
-                content:
-                  application/json:
-                    schema:
-                      type: object
-                      properties:
-                        message:
-                          type: string
-                          example: "Hello, world!"
+                description: OK
