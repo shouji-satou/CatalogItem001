@@ -8,5 +8,5 @@ metadata:
     app: example
 spec:
   type: website
-  owner: user:default/shouji-satou
+  owner: user:default/user
   lifecycle: production
