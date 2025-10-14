@@ -3,7 +3,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: sample-api
-  description: Simple sample API
+  description: デモンストレーション用のAPIです
 spec:
   type: openapi
   lifecycle: experimental
