@@ -2,21 +2,20 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: sample-api
-  description: This is a sample API definition
+  description: Mock API sample for testing catalog registration
 spec:
   type: openapi
   lifecycle: experimental
   owner: user:default/user
-  definition:
-    $text: |
-      openapi: 3.0.0
-      info:
-        title: Hello API
-        version: 1.0.0
-      paths:
-        /hello:
-          get:
-            summary: Returns a greeting message
-            responses:
-              '200':
-                description: OK
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: Sample API
+      version: 1.0.0
+    paths:
+      /hello:
+        get:
+          summary: Hello endpoint
+          responses:
+            '200':
+              description: OK
